@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>X-bot</title>
+  <link rel="stylesheet" href="fonts/style.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="container">
+        <div class="header__block">
+          <div class="header__logo">
+            <a href="#">
+              <img src="images/logo.png" alt="logo">
+            </a>
+          </div>
+          <nav class="header__menu">
+            <ul>
+              <li><a href="#">Выбор продукта</a></li>
+              <li><a href="#">Скачать</a></li>
+              <li><a href="#">Отзывы</a></li>
+              <li><a href="#">Инструкция</a></li>
+              <li><a href="#">Личный кабинет</a></li>
+            </ul>
+          </nav>
+          <div class="header__lang">
+            <form>
+              <select name="selectLang" id="selectLang">
+                <option value="eng">eng</option>
+                <option value="ru">ru</option>
+              </select>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="container">
+        <div class="hero__block">
+          <div class="hero__text">
+            <h3 class="hero__title">Зарабатывайте на скинах CS:GO </h3>
+            <p class="hero__subtitle">Получать пассивный доход просто, как никогда.</p>
+            <p class="hero__slogan">Мы ответим на все возникающие вопросы и дадим советы по подготовке к торговле с
+              XBOT, поможем с
+              установкой, запуском и настройкой бота, дадим рекомендации по упрощению работы, чтобы вы могли начать
+              пассивно зарабатывать, не имея опыта в трейдинге.</p>
+            <a href="#" class="hero__btn">
+              СМОТРЕТЬ ВИДЕООБЗОР
+            </a>
+          </div>
+          <div class="hero__card">
+            <div class="hero__tools">
+              <img class="hero__tools-img" src="images/tools.png" alt="Tools">
+              <img class="hero__sq-img" src="images/square.png" alt="">
+            </div>
+            <div class="hero__card-text">
+              <p>Awp Asiimov | Startrek
+                <span>(Поношенное)</span>
+              </p>
+            </div>
+            <div class="hero__card-price">
+              <p class="purchase">Покупка <span>13 099.56 ₽</span></p>
+              <p class="sale">Продажа <span>19 099.57 ₽</span></p>
+            </div>
+          </div>
+        </div>
+        <div class="hero__link">
+          <a href="#">
+            <span class="hero__link-icon"><img src="images/down-arrow.png" alt=""></span>
+            <span>расчитай доход</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero__shapes">
+        <img class="sq-shape" src="images/sq-shape.png" alt="">
+        <img class="plus-shape" src="images/plus-shape.png" alt="">
+        <img class="circle-shape" src="images/circle-shape.png" alt="">
+        <img class="x-shape" src="images/x-shape.png" alt="">
+      </div>
+    </section>
+
+    <section class="income">
+      <div class="container">
+        <div class="title">
+          <h2>какой <span>доход</span> вы хотите создать?</h2>
+        </div>
+        <div class="range">
+          <div class="range__value">
+            <div class="value">0</div>
+            <span>Р.</span>
+          </div>
+          <input type="range" min="0" max="50000" value="0" id="range" />
+          <p class="range__title">для этого вам понадобиться<span> 50 000 Р.</span></p>
+        </div>
+
+        <div class="income__checkbox">
+          <dl class="radio-list-right">
+            <dd>
+              <input type="radio" name="pq3" id="pq3-1" value="1" checked="checked">
+              <label for="pq3-1"><img src="images/xbot-1.png" alt=""> XBOT PRO</label>
+            </dd>
+            <dd>
+              <input type="radio" name="pq3" id="pq3-2" value="2">
+              <label for="pq3-2"><img src="images/xbot-2.png" alt=""> XBOT X</label>
+            </dd>
+            <dd>
+              <input type="radio" name="pq3" id="pq3-3" value="3">
+              <label for="pq3-3"><img src="images/xbot-3.png" alt=""> XBOT Start</label>
+            </dd>
+            <dd>
+              <input type="radio" name="pq3" id="pq3-4" value="4">
+              <label for="pq3-4"><img src="images/xbot-4.png" alt=""> XBOT MINI</label>
+            </dd>
+          </dl>
+          <div class="income__checkbox-txt">
+            <ul>
+              <li>Готов к работе сразу после запуска</li>
+              <li>Автоматический поиск выгодных вещей</li>
+              <li>Корректировка цен на покупку на 1 позиции</li>
+              <li>Выставление вещей из инвентаря Steam на продажу</li>
+              <li>Корректировка цен на продаже на 1 позиции</li>
+              <li>Автоматический приём и передача вещей</li>
+              <li>Управление через Telegram</li>
+              <li>Приоритетная поддержка и получение обновлений</li>
+              <li>Без лимита баланса</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
