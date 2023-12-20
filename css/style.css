@@ -505,8 +505,6 @@ dl dd {
   display: flex;
   flex-direction: column;
   gap: 30px;
-
-  /* margin-top: 55px; */
 }
 .income__checkbox-txt ul li {
   position: relative;
