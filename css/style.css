@@ -261,7 +261,8 @@ a {
 .income {
   background-image: url(../images/shapesss.png);
   background-repeat: no-repeat;
-  /* height: 100vh; */
+  background-size: contain;
+  background-position: center;
   background-color: #000;
   padding-top: 75px;
   padding-bottom: 110px;
@@ -365,14 +366,13 @@ Aesthetics
   left: 50%;
   background-color: #00ace1;
   height: 100%;
-  width: 2px;
+  width: 4px;
 }
 
 .range {
   align-items: center;
   gap: 1rem;
   margin: 0 auto;
-  /* height: 4rem; */
   width: 80%;
   padding: 0px 10px;
 }
@@ -401,100 +401,81 @@ Aesthetics
   color: #00ace1;
 }
 
-/* CHeckbox */
+/* **************************CHeckbox************************** */
 .radio-list-right {
-  width: 40%;
-  /* border-right: 2px solid #00ace1; */
-  /* height: 100%; */
-  /* width: 100%; */
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex: 0 0 45%;
 }
-.radio-list-left input[type="radio"],
 .radio-list-right input[type="radio"] {
   opacity: 0;
   float: left;
   width: 1px;
   margin: 0;
 }
-.radio-list-left input[type="radio"] + label,
 .radio-list-right input[type="radio"] + label {
   position: relative;
   margin: 0;
   display: block;
   width: 100%;
-  padding: 10px;
-  color: #222;
-  /* background: #fff; */
-  /* border-bottom: 5px solid #eee; */
+  padding: 15px;
 }
-.radio-list-left input[type="radio"] + label:before,
 .radio-list-right input[type="radio"] + label:before {
   content: "";
   position: absolute;
-  top: 50%;
+  top: 47%;
   background: transparent;
-  border: 5px solid #00ace1;
+  border: 3px solid #00ace1;
+  padding: 3px;
 }
-.radio-list-left input:checked[type="radio"] + label,
 .radio-list-right input:checked[type="radio"] + label {
-  /* color: #2ea34e; */
-  border: 2px solid #00ace1;
+  border: 3px solid #00ace1;
   border-radius: 10px;
 }
-.radio-list-left input:checked[type="radio"] + label:before,
 .radio-list-right input:checked[type="radio"] + label:before {
-  background: #00ace1;
-  border-color: #00ace1;
+  border: 3px solid #00ace1;
 }
-.radio-list-left input:disabled[type="radio"] + label,
-.radio-list-right input:disabled[type="radio"] + label {
-  color: #ccc;
-}
-.radio-list-left input:disabled[type="radio"] + label:before,
-.radio-list-right input:disabled[type="radio"] + label:before {
-  background: rgba(204, 204, 204, 0.5);
-  /* border: 2px dotted #ccc; */
-}
-.radio-list-left input:focus[type="radio"] + label,
-.radio-list-right input:focus[type="radio"] + label {
-  box-shadow: inset 0 0 3px #eee;
-}
-
-dl {
-  /* max-width: 350px; */
-  /* margin: 50px auto; */
-}
-dl dt {
-  /* margin: 3em 0 5px; */
-  /* font-size: 18px; */
-}
-dl dd {
-  /* margin: 0; */
-}
-
-.radio-list-left input[type="radio"] + label {
-  padding-left: 50px;
-}
-.radio-list-left input[type="radio"] + label:before {
-  height: 20px;
-  width: 20px;
-  /* margin-top: -11px; */
-  left: 10px;
-  border-radius: 100%;
+.radio-list-right input:checked[type="radio"] + label::after {
+  content: "";
+  position: absolute;
+  top: 37px;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  background-color: #00cce1;
+  border-radius: 100px;
 }
 
 .radio-list-right input[type="radio"] + label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-family: "NEXT ART Bold";
   font-size: 24px;
   color: #fff;
+  cursor: pointer;
+}
+.radio__img {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+.radio__price {
+  font-size: 24px;
+  font-family: "Roboto Thin";
+  padding-right: 50px;
 }
 .radio-list-right input[type="radio"] + label:before {
-  height: 20px;
-  width: 20px;
-  margin-top: -11px;
-  right: 10px;
+  height: 18px;
+  width: 18px;
+  margin-top: -12px;
+  right: 9px;
   border-radius: 100%;
 }
-
+.income__checkbox-txt {
+  flex-basis: 40%;
+}
 .income__checkbox-txt ul {
   font-family: "Roboto Thin";
   color: #fff;
@@ -517,4 +498,42 @@ dl dd {
   background-image: url(../images/checked.png);
   background-repeat: no-repeat;
   left: -40px;
+}
+
+/* how__works */
+
+.how__works {
+  position: relative;
+  padding: 100px 0;
+  /* height: 100vh; */
+}
+.how__works-img {
+  position: absolute;
+  top: 206px;
+  left: 36%;
+}
+.how__works .title h2 {
+  color: #000;
+}
+.how__works-item {
+  max-width: 440px;
+}
+
+.how__works-title {
+  font-family: "NEXT ART Bold";
+  font-size: 21px;
+  margin-bottom: 10px;
+}
+
+.how__works-subtitle {
+  font-family: "Roboto Light";
+  font-size: 18px;
+}
+.blocks-right {
+  margin-left: auto;
+}
+.right-subtitle {
+  border-left: 3px solid #00ace1;
+  padding-left: 20px;
+  margin-left: -20px;
 }
