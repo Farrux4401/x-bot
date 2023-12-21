@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>X-bot</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+
   <link rel="stylesheet" href="fonts/style.css">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -43,7 +45,7 @@
       </div>
     </header>
     <section class="hero">
-      <div class="container">
+      <div class="container hero__container">
         <div class="hero__block">
           <div class="hero__text">
             <h3 class="hero__title">Зарабатывайте на скинах CS:GO </h3>
@@ -57,18 +59,78 @@
             </a>
           </div>
           <div class="hero__card">
-            <div class="hero__tools">
-              <img class="hero__tools-img" src="images/tools.png" alt="Tools">
-              <img class="hero__sq-img" src="images/square.png" alt="">
-            </div>
-            <div class="hero__card-text">
-              <p>Awp Asiimov | Startrek
-                <span>(Поношенное)</span>
-              </p>
-            </div>
-            <div class="hero__card-price">
-              <p class="purchase">Покупка <span>13 099.56 ₽</span></p>
-              <p class="sale">Продажа <span>19 099.57 ₽</span></p>
+            <div class="blog-slider">
+              <div class="blog-slider__wrp swiper-wrapper">
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img class="hero__tools-img weapon-1" src="images/awp.png" alt="Tools">
+                  </div>
+
+                  <div class="blog-slider__content">
+                    <div class="hero__card-text">
+                      <p>Awp Asiimov | Startrek
+                        <span>(Поношенное)</span>
+                      </p>
+                    </div>
+                    <div class="hero__card-price">
+                      <p class="purchase">Покупка <span>13 099.56 ₽</span></p>
+                      <p class="sale">Продажа <span>19 099.57 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img class="hero__tools-img weapon-2" src="images/ak.png" alt="Tools">
+                  </div>
+                  <div class="blog-slider__content">
+                    <div class="hero__card-text">
+                      <p>Awp Asiimov | Startrek
+                        <span>(Поношенное)</span>
+                      </p>
+                    </div>
+                    <div class="hero__card-price">
+                      <p class="purchase">Покупка <span>13 099.56 ₽</span></p>
+                      <p class="sale">Продажа <span>19 099.57 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img class="hero__tools-img weapon-3" src="images/pistols.png" alt="Tools">
+                  </div>
+                  <div class="blog-slider__content">
+                    <div class="hero__card-text">
+                      <p>Awp Asiimov | Startrek
+                        <span>(Поношенное)</span>
+                      </p>
+                    </div>
+                    <div class="hero__card-price">
+                      <p class="purchase">Покупка <span>13 099.56 ₽</span></p>
+                      <p class="sale">Продажа <span>19 099.57 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="blog-slider__item swiper-slide">
+                  <div class="blog-slider__img">
+                    <img class="hero__tools-img weapon-4" src="images/knife.png" alt="Tools">
+                  </div>
+                  <div class="blog-slider__content">
+                    <div class="hero__card-text">
+                      <p>Awp Asiimov | Startrek
+                        <span>(Поношенное)</span>
+                      </p>
+                    </div>
+                    <div class="hero__card-price">
+                      <p class="purchase">Покупка <span>13 099.56 ₽</span></p>
+                      <p class="sale">Продажа <span>19 099.57 ₽</span></p>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- <div class="blog-slider__pagination"></div> -->
             </div>
           </div>
         </div>
@@ -78,17 +140,23 @@
             <span>расчитай доход</span>
           </a>
         </div>
+
+        <div class="hero__shapes">
+          <img class="sq-shape" src="images/sq-shape.png" alt="">
+          <img class="plus-shape" src="images/shape-black-plus.png" alt="">
+          <img class="circle-shape" src="images/circle-shape.png" alt="">
+          <img class="x-shape" src="images/x-shape.png" alt="">
+        </div>
       </div>
-      <div class="hero__shapes">
-        <img class="sq-shape" src="images/sq-shape.png" alt="">
-        <img class="plus-shape" src="images/plus-shape.png" alt="">
-        <img class="circle-shape" src="images/circle-shape.png" alt="">
-        <img class="x-shape" src="images/x-shape.png" alt="">
-      </div>
+
     </section>
 
     <section class="income">
-      <div class="container">
+      <div class="container income__container">
+        <img class="income-1" src="images/income-1.png" alt="">
+        <img class="income-2" src="images/income-2.png" alt="">
+        <img class="income-3" src="images/income-3.png" alt="">
+        <img class="income-4" src="images/income-4.png" alt="">
         <div class="title">
           <h2>какой <span>доход</span> вы хотите создать?</h2>
         </div>
@@ -142,60 +210,238 @@
             </ul>
           </div>
         </div>
-        <img src="images/plus-shape.png" alt="">
+
       </div>
     </section>
 
     <section class="how__works">
-      <div class="container">
+      <div class="container how__works-container">
+        <img class="income-plus-img" src="images/plus-shape.png" alt="">
+        <img class="how__works-img1" src="images/income-1.png" alt="">
         <div class="how__works-blocks">
-          <img class="how__works-img" src="images/blocks.png" alt="">
           <div class="title">
             <h2>Как это работает</h2>
           </div>
-          <div class="how__works-item blocks-right">
-            <h3 class="how__works-title">Аналитика рынка</h3>
-            <p class="how__works-subtitle right-subtitle">XBOT автоматически проводит аналитику по готовой и расширяемой
-              базе вещей с
-              подробнейшими настройками
-              оценки выгодности, в зависимости от всех рыночных показателей и выставляет запросы на покупку ниже рынка
-              на выгодные скины.</p>
-          </div>
+          <div class="force__block">
 
-          <div class="how__works-item blocks-left">
-            <h3 class="how__works-title">Конкуренция за выгодные покупки</h3>
-            <p class="how__works-subtitle right-subtitle">XBOT автоматически проводит аналитику по готовой и расширяемой
-              XBOT перебивает цены запросов конкурентов
-              и ставит наши запросы на покупку на 1 места, чтобы максимально увеличить шанс совершить выгодные покупки.
-            </p>
-          </div>
+            <div class="how__works-item blocks-right">
+              <div class="how__works-item-img">
+                <!-- <img class="force-line-img" src="images/force-line-1.png" alt=""> -->
+                <img class="force-img" src="images/force1.png" alt="">
+                <span class="force-1">1</span>
+              </div>
+              <div>
+                <h3 class="how__works-title">Аналитика рынка</h3>
+                <p class="how__works-subtitle right-subtitle">XBOT автоматически проводит аналитику по готовой и
+                  расширяемой
+                  базе вещей с
+                  подробнейшими настройками
+                  оценки выгодности, в зависимости от всех рыночных показателей и выставляет запросы на покупку ниже
+                  рынка
+                  на выгодные скины.</p>
+              </div>
+            </div>
 
-          <div class="how__works-item blocks-right">
-            <h3 class="how__works-title">ПРиём покупок</h3>
-            <p class="how__works-subtitle right-subtitle">При совершении покупок, XBOT сам принимает вещи в инвентарь
-              Steam (для работы данного функционала необходимо подключение аккаунта Steam к SDA - эмулятору приложения
-              Steam Guard для Windows)
-            </p>
-          </div>
+            <div class="how__works-item blocks-left">
+              <div>
+                <h3 class="how__works-title">Конкуренция за выгодные покупки</h3>
+                <p class="how__works-subtitle left-subtitle">XBOT автоматически проводит аналитику по готовой и
+                  расширяемой
+                  XBOT перебивает цены запросов конкурентов
+                  и ставит наши запросы на покупку на 1 места, чтобы максимально увеличить шанс совершить выгодные
+                  покупки.
+                </p>
+              </div>
+              <div class="how__works-item-img">
+                <!-- <img class="force-line-img1" src="images/force-line-2.png" alt=""> -->
+                <img class="force-img" src="images/force-2.png" alt="">
+                <span class="force-2">2</span>
+              </div>
+            </div>
 
-          <div class="how__works-item blocks-left">
-            <h3 class="how__works-title">Выставление на продажу</h3>
-            <p class="how__works-subtitle right-subtitle">Бот выставляет вещи на продажу
-              и перебивает цены конкурентов на копейку, ставя ваши вещи на самые выгодные позиции, чтобы увеличить шанс
-              совершить выгодную продажу, и ждёт покупателей
-            </p>
-          </div>
+            <div class="how__works-item blocks-right">
+              <div class="how__works-item-img">
+                <!-- <img class="force-line-img" src="images/force-line-3.png" alt=""> -->
+                <img class="force-img" src="images/force-3.png" alt="">
+                <span class="force-3">3</span>
+              </div>
+              <div>
+                <h3 class="how__works-title">ПРиём покупок</h3>
+                <p class="how__works-subtitle right-subtitle">При совершении покупок, XBOT сам принимает вещи в
+                  инвентарь
+                  Steam (для работы данного функционала необходимо подключение аккаунта Steam к SDA - эмулятору
+                  приложения
+                  Steam Guard для Windows)
+                </p>
+              </div>
+            </div>
 
-          <div class="how__works-item blocks-right">
-            <h3 class="how__works-title">БОЛЬШЕ ИГР</h3>
-            <p class="how__works-subtitle right-subtitle">При совершении продажи, бот автоматически передаёт вещи
-              покупателям, а площадка зачисляет вам средства за продажу.
-            </p>
+            <div class="how__works-item blocks-left">
+
+              <div>
+                <h3 class="how__works-title">Выставление на продажу</h3>
+                <p class="how__works-subtitle left-subtitle">Бот выставляет вещи на продажу
+                  и перебивает цены конкурентов на копейку, ставя ваши вещи на самые выгодные позиции, чтобы увеличить
+                  шанс
+                  совершить выгодную продажу, и ждёт покупателей
+                </p>
+              </div>
+              <div class="how__works-item-img">
+                <!-- <img class="force-line-img1" src="images/force-line-2.png" alt=""> -->
+                <img class="force-img" src="images/force-4.png" alt="">
+                <span class="force-4">4</span>
+              </div>
+            </div>
+
+            <div class="how__works-item blocks-right">
+              <div class="how__works-item-img">
+                <!-- <img class="force-line-img" src="images/force-line-3.png" alt=""> -->
+                <img class="force-img" src="images/force-5.png" alt="">
+                <span class="force-5">5</span>
+              </div>
+              <div>
+                <h3 class="how__works-title">БОЛЬШЕ ИГР</h3>
+                <p class="how__works-subtitle right-subtitle">При совершении продажи, бот автоматически передаёт вещи
+                  покупателям, а площадка зачисляет вам средства за продажу.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <section class="video">
+      <div class="container">
+        <div class="title">
+          <h2>Видеообзор бота</h2>
+          <p class="subtitle">Посмотрите обзор нашего бота и сами убедитесь,
+            насколько просто начать трейдить с XBOT</p>
+        </div>
+        <div class="video__block">
+          <iframe src="https://www.youtube.com/embed/BQzA0I6ulyI?si=oh1Wbi00nN1L8J-s" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        </div>
+        <div class="payment__method">
+          <a href="#"><img src="images/visa.png" alt="Visa"></a>
+          <a href="#"><img src="images/mastercard.png" alt="mastercard"></a>
+          <a href="#"><img src="images/yu-money.png" alt="yu money"></a>
+          <a href="#"><img src="images/qiwi.png" alt="qiwi"></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="trader">
+      <div class="container trader__container">
+        <img class="trade-shape-1" src="images/trade-shape-1.png" alt="">
+        <img class="trade-shape-2" src="images/trade-shape-2.png" alt="">
+        <div class="title">
+          <h2>Для трейдеров с большим банком</h2>
+        </div>
+        <div class="trader__block">
+          <div class="trader__txt">
+            <p class="trader__block-txt">Если вы нацелены на максимум профита
+              и хотите развернуть профессиональную торговую ферму из нескольких ботов, напишите нам и мы предложим вам
+              индивидуальные условия на наши продукты, позволяющие получить ещё больше выгоды.</p>
+            <p class="trader__block-slogan">Чем больше ботов вы используете, тем больше будет ваша скидка на каждую
+              дополнительную подписку, общая
+              скидка может достигать 25%“</p>
+            <a href="#" class="trader__link">Получить персональное предложение</a>
+          </div>
+          <div class="trader__block-img">
+            <img src="images/trade-img.png" alt="trade">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="cashback">
+      <div class="container">
+        <div class="title">
+          <h2>система накопительного кэшбека</h2>
+          <p class="cashback__subtitle">Чем дольше вы с нами, тем больше ваш кэшбэк за каждое пополнение баланса личного
+            кабинета,
+            который вы можете потратить на продление подписок на наши продукты</p>
+        </div>
+        <div class="cashback__step">
+          <ul>
+            <li>
+              <span class="icons awesome">0 м</span>
+              <div class="step first">
+                <p></p>
+                <i class="awesome fa-solid fa-check"></i>
+              </div>
+              <p class="label">0%</p>
+            </li>
+            <li>
+              <span class="icons awesome">3 мес</span>
+              <div class="step second">
+                <p></p>
+                <i class="awesome fa-solid fa-check"></i>
+              </div>
+              <p class="label">0.5%</p>
+            </li>
+            <li>
+              <span class="icons awesome">6 мес</span>
+              <div class="step third">
+                <p></p>
+                <i class="awesome fa-solid fa-check"></i>
+              </div>
+              <p class="label">1 %</p>
+            </li>
+            <li>
+              <span class="icons awesome">1 год</span>
+              <div class="step fourth">
+                <p></p>
+                <i class="awesome fa-solid fa-check"></i>
+              </div>
+              <p class="label">1.5 %</p>
+            </li>
+            <li>
+              <span class="icons awesome">2 год</span>
+              <div class="step fifth">
+                <p></p>
+                <i class="awesome fa-solid fa-check"></i>
+              </div>
+              <p class="label">2 %</p>
+            </li>
+          </ul>
+        </div>
+        <div class="title">
+          <h2>Поддержка</h2>
+        </div>
+        <div class="cashback__info">
+          <div class="cashback__info-txt">
+            <p>Появилась проблема? Мы всегда найдём решение
+              <a href="#">Напишите нам и мы обязательно поможем!</a>
+            </p>
+            <p>У нас есть общий группа <a href="#">VK</a>, мы ведем канал
+              о торговле в <a href="#">Telegram</a> в котором обозреваем рынок и делимся собственными результатами
+              работы
+              с ботом, <a href="#">общий чат для пользователей XBOT PRO</a>, где в первую очередь появляется вся новая
+              информация по рынку
+              и нашим продуктам</p>
+            <div class="cashback__social">
+              <a href="#"><img src="images/telegram.png" alt=""></a>
+              <a href="#"><img src="images/vk.png" alt=""></a>
+              <a href="#"><img src="images/youtube-logo.png" alt=""></a>
+            </div>
+          </div>
+          <div class="cashback__info-img">
+            <img src="images/head.png" alt="Heead">
+          </div>
+        </div>
+        <div class="cashback__btm-txt">
+          Разработчики не несут ответственность за расходы полученные во время использования программы. <a href="#">©
+            XBOT 2023</a>
+        </div>
+      </div>
+    </section>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
   <script src="js/main.js"></script>
 </body>
 
